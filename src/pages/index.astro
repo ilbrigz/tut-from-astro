@@ -1,5 +1,7 @@
 ---
+import '../styles/global.css';
 import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import Navigation from '../components/Navigation.astro';
 const pageTitle = 'home page of the website';
 ---
@@ -13,8 +15,11 @@ const pageTitle = 'home page of the website';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
     <h1>{pageTitle}</h1>
+    <Footer />
   </body>
-  <Footer />
+  <script>
+    import '../scripts/menu';
+  </script>
 </html>
