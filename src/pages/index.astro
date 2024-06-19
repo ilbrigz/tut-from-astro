@@ -1,7 +1,8 @@
 ---
-import '../styles/global.css';
-import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = 'home page of the website';
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
+const pageTitle = "home page of the website";
 ---
 
 <html lang="en">
@@ -19,9 +20,10 @@ const pageTitle = 'home page of the website';
         minima dicta sint ullam eum ut provident impedit, voluptatem ab deserunt
         ipsam, rem ducimus, dolores distinctio! Nam nisi veritatis possimus!
       </p>
+      <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
     </BaseLayout>
   </body>
   <script>
-    import '../scripts/menu';
+    import "../scripts/menu";
   </script>
 </html>
