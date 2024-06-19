@@ -1,8 +1,6 @@
 ---
 import '../styles/global.css';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = 'home page of the website';
 ---
 
@@ -15,9 +13,13 @@ const pageTitle = 'home page of the website';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Header />
-    <h1>{pageTitle}</h1>
-    <Footer />
+    <BaseLayout pageTitle={pageTitle}>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui obcaecati
+        minima dicta sint ullam eum ut provident impedit, voluptatem ab deserunt
+        ipsam, rem ducimus, dolores distinctio! Nam nisi veritatis possimus!
+      </p>
+    </BaseLayout>
   </body>
   <script>
     import '../scripts/menu';
