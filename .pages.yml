@@ -7,7 +7,7 @@ content:
     view:
       fields: [ title, pubDate ]
     fields:
-      - name: date
+      - name: pubDate
         label: Publish Date
         type: date
       - name: title
