@@ -4,5 +4,15 @@ content:
     label: Posts
     type: collection
     path: src/pages/posts
+    view:
+      fields: [ title, pubDate ]
     fields:
-      - {name: title, label: Title, type: string }
+      - name: date
+        label: Publish Date
+        type: date
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
