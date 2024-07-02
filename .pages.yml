@@ -1,5 +1,4 @@
 media: src/assets
-output: ../assets
 content:
   - name: posts
     label: Posts
