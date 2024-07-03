@@ -1,0 +1,20 @@
+media:
+  input: src/assets
+  output: ../../assets
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: src/pages/posts
+    view:
+      fields: [ title, pubDate ]
+    fields:
+      - name: pubDate
+        label: Publish Date
+        type: date
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
