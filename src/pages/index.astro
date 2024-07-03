@@ -1,8 +1,16 @@
 ---
+<<<<<<< HEAD
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Greeting from "../components/Greeting";
 const pageTitle = "home page of the website";
+=======
+import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = 'home page of the website';
+>>>>>>> parent of 7570262 (generate pages from existing tags)
 ---
 
 <html lang="en">
@@ -14,6 +22,7 @@ const pageTitle = "home page of the website";
     <title>{pageTitle}</title>
   </head>
   <body>
+<<<<<<< HEAD
     <BaseLayout pageTitle={pageTitle}>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui obcaecati
@@ -22,6 +31,11 @@ const pageTitle = "home page of the website";
       </p>
       <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
     </BaseLayout>
+=======
+    <Header />
+    <h1>{pageTitle}</h1>
+    <Footer />
+>>>>>>> parent of 7570262 (generate pages from existing tags)
   </body>
   <script>
     import "../scripts/menu";
